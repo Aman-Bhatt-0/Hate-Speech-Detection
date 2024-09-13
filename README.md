@@ -43,6 +43,29 @@ The dataset used for this project is the Hate Speech and Offensive Language Data
  ### Class Distribution
  ![Class Distribution](images/class_distribution.png)
 
-Word Cloud of Tweets (for each class)
-
+### Word Cloud of Tweets (for each class)
+![Word Cloud ](images/wordcloud.png)
 The repository includes scripts to visualize class distributions and word clouds to help understand the data better.
+
+## Model Training and Evaluation
+We applied the following models in the project:
+
+* Random Forest (after hyperparameter tuning)
+* Logistic Regression
+* Decision Tree
+* Naive Bayes
+To train the models, we split the dataset into a training set and a test set using an 80/20 split. The performance of each model is evaluated using metrics like accuracy and a confusion matrix.
+![Confusion metrics](images/confusion_metrices.png)
+
+## Results
+The Random Forest classifier achieved the highest accuracy among the models, with the following metrics:
+
+* Random Forest Accuracy: 0.94
+* Logistic Regression Accuracy: 0.91
+* Decision Tree Accuracy: 0.89
+* Naive Bayes Accuracy: 0.85
+The model successfully classifies tweets into the correct categories based on features extracted using the TF-IDF vectorizer.
+
+## Text Prediction
+To predict whether a piece of text is hate speech, offensive language, or neither, we provide a function that accepts raw text as input:
+![usage](images/result.png)
