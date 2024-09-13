@@ -45,7 +45,8 @@ The dataset used for this project is the Hate Speech and Offensive Language Data
 
 ### Word Cloud of Tweets (for each class)
 ![Word Cloud ](images/wordcloud.png)
-The repository includes scripts to visualize class distributions and word clouds to help understand the data better.
+
+##### The repository includes scripts to visualize class distributions and word clouds to help understand the data better.
 
 ## Model Training and Evaluation
 We applied the following models in the project:
